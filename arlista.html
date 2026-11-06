@@ -2,7 +2,7 @@
 <html lang="hu">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-ndo/7cKbt+/fyI1Fw8NB5HzSQUgXNuofezCWOnRifV8='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-SB0uk+6drZLjfVt8svCY/KLkETrDkNkPep62myDsnLI='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Árlista | Dorogi Digital</title>
@@ -27,10 +27,21 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page-loader" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="5.5" r="2.7" transform="rotate(0 24 24)" style="animation-delay:-1.2s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(30 24 24)" style="animation-delay:-1.1s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(60 24 24)" style="animation-delay:-1.0s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(90 24 24)" style="animation-delay:-0.9s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(120 24 24)" style="animation-delay:-0.8s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(150 24 24)" style="animation-delay:-0.7s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(180 24 24)" style="animation-delay:-0.6s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(210 24 24)" style="animation-delay:-0.5s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(240 24 24)" style="animation-delay:-0.4s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(270 24 24)" style="animation-delay:-0.3s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(300 24 24)" style="animation-delay:-0.2s"/><circle cx="24" cy="5.5" r="2.7" transform="rotate(330 24 24)" style="animation-delay:-0.1s"/></svg></div>
+<div class="page-loader" aria-hidden="true">
+  <div class="wrap sk">
+    <span class="sk-b sk-title"></span>
+    <span class="sk-b sk-title sk-short"></span>
+    <span class="sk-b sk-line"></span>
+    <span class="sk-b sk-line"></span>
+    <span class="sk-b sk-line sk-mid"></span>
+    <span class="sk-b sk-btn"></span>
+    <div class="sk-cards"><span class="sk-b sk-card"></span><span class="sk-b sk-card"></span><span class="sk-b sk-card"></span></div>
+  </div>
+</div>
+<a class="skip-link" href="#top">Ugrás a tartalomra</a>
 <header class="site-head">
   <div class="wrap head-row">
-    <a class="brand" href="/#top" aria-label="Dorogi Digital, ugrás az oldal tetejére"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><rect class="lg-tile" width="40" height="40" rx="10"/><rect class="lg-stem" x="9.25" y="10" width="5" height="20" rx="1.4"/><path class="lg-bowl" fill-rule="evenodd" d="M16.25 10h4.5a10 10 0 0 1 0 20h-4.5zM16.25 15h4.5a5 5 0 0 1 0 10h-4.5z"/></svg><span class="brand-name">Dorogi<span>digital</span></span></a>
+    <a class="brand" href="/#top" aria-label="Dorogi Digital, ugrás az oldal tetejére"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><rect class="lg-tile" width="40" height="40" rx="10"/><rect class="lg-stem" x="9.25" y="10" width="5" height="20" rx="1.4"/><path class="lg-bowl" fill-rule="evenodd" d="M16.25 10h4.5a10 10 0 0 1 0 20h-4.5zM16.25 15h4.5a5 5 0 0 1 0 10h-4.5z"/></svg><span class="brand-name" translate="no">Dorogi<span>digital</span></span></a>
     <nav class="nav" aria-label="Fő navigáció">
       <a href="/#szolgaltatasok">Szolgáltatások</a>
       <a href="/#folyamat">Folyamat</a>
@@ -56,7 +67,7 @@
   </nav>
 </header>
 
-<main id="top" class="subpage">  <section id="arak" class="section section-alt" aria-labelledby="price-title">
+<main id="top" tabindex="-1" class="subpage">  <section id="arak" class="section section-alt" aria-labelledby="price-title">
     <div class="wrap">
       <header class="sec-head">
         <h1 class="page-title" id="price-title">Árlista</h1>
@@ -65,8 +76,8 @@
       <div class="prices">
         <article class="price">
           <h3>Bemutatkozó</h3>
-          <p class="price-desc">Egyoldalas weboldal, ha gyorsan és egyszerűen szeretnél megjelenni.</p>
           <p class="price-num">99 000<small>Ft-tól</small></p>
+          <p class="price-desc">Egyoldalas weboldal, ha gyorsan és egyszerűen szeretnél megjelenni.</p>
           <ul class="ticks">
             <li>Egy görgethető oldal</li>
             <li>Mobilra és gépre tervezve</li>
@@ -78,8 +89,8 @@
         </article>
         <article class="price">
           <h3>Céges weboldal</h3>
-          <p class="price-desc">Több aloldal szolgáltatásokkal, árlistával és galériával.</p>
           <p class="price-num">179 000<small>Ft-tól</small></p>
+          <p class="price-desc">Több aloldal szolgáltatásokkal, árlistával és galériával.</p>
           <ul class="ticks">
             <li>Legfeljebb 5 aloldal</li>
             <li>Minden, ami a Bemutatkozóban</li>
@@ -91,8 +102,8 @@
         </article>
         <article class="price">
           <h3>Webshop</h3>
-          <p class="price-desc">Online bolt fizetéssel, szállítással és rendelési értesítőkkel.</p>
           <p class="price-num">Kérésre<small>egyedi ajánlat</small></p>
+          <p class="price-desc">Online bolt fizetéssel, szállítással és rendelési értesítőkkel.</p>
           <ul class="ticks">
             <li>Termékek és kategóriák feltöltése</li>
             <li>Bankkártyás és utánvétes fizetés</li>
@@ -135,7 +146,7 @@
 <footer class="site-foot">
   <div class="wrap foot-grid">
     <div class="foot-about">
-      <a class="brand" href="/#top"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><rect class="lg-tile" width="40" height="40" rx="10"/><rect class="lg-stem" x="9.25" y="10" width="5" height="20" rx="1.4"/><path class="lg-bowl" fill-rule="evenodd" d="M16.25 10h4.5a10 10 0 0 1 0 20h-4.5zM16.25 15h4.5a5 5 0 0 1 0 10h-4.5z"/></svg><span class="brand-name">Dorogi<span>digital</span></span></a>
+      <a class="brand" href="/#top"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><rect class="lg-tile" width="40" height="40" rx="10"/><rect class="lg-stem" x="9.25" y="10" width="5" height="20" rx="1.4"/><path class="lg-bowl" fill-rule="evenodd" d="M16.25 10h4.5a10 10 0 0 1 0 20h-4.5zM16.25 15h4.5a5 5 0 0 1 0 10h-4.5z"/></svg><span class="brand-name" translate="no">Dorogi<span>digital</span></span></a>
       <p>Weboldalak és webshopok helyi vállalkozásoknak, egész Magyarországon.</p>
     </div>
     <nav class="foot-col" aria-label="Lábléc navigáció">
@@ -206,10 +217,15 @@
   </div>
 </dialog>
 
+<script src="js/motion.min.js"></script>
 <script>
 (function(){
   var CONFIG = { email: 'info@dorogidigital.com', phone: '+36 30 489 9441', web3formsKey: '264a63b2-8f26-47ea-b248-6eeef6f44f97' };
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* Motion (a Framer Motion csapat keretrendszer-független könyvtára): rugós mozgások. Ha nem töltődik be, a CSS-es mozgás marad. */
+  var M = (!reduce && window.Motion && window.Motion.animate) ? window.Motion : null;
+  var EASE = [0.23, 1, 0.32, 1];
+  if (M) document.documentElement.classList.add('mo');
 
   /* Oldalváltás: kifakulás, beúszás, lassú betöltésnél töltőkarika */
   (function(){
@@ -225,6 +241,7 @@
       if (!a || a.target === '_blank' || a.hasAttribute('download')) return;
       if (a.protocol !== 'http:' && a.protocol !== 'https:') return;
       if (a.origin !== location.origin) return;
+      if (window.__formDirty) return;
       if (a.pathname === location.pathname || (/\/(index\.html)?$/.test(a.pathname) && /\/(index\.html)?$/.test(location.pathname))) return;
       e.preventDefault();
       var href = a.href;
@@ -241,13 +258,21 @@
   onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
 
   var menuBtn = document.querySelector('.menu-btn'), mnav = document.getElementById('mobile-nav');
-  menuBtn.addEventListener('click', function(){
-    var open = menuBtn.getAttribute('aria-expanded') === 'true';
-    menuBtn.setAttribute('aria-expanded', String(!open));
-    mnav.hidden = open;
-  });
-  mnav.addEventListener('click', function(e){
-    if (e.target.closest('a')) { mnav.hidden = true; menuBtn.setAttribute('aria-expanded', 'false'); }
+  function setMenu(open){
+    menuBtn.setAttribute('aria-expanded', String(open));
+    if (open) {
+      mnav.hidden = false;
+      if (M) M.animate(mnav, { opacity: [0, 1], transform: ['translateY(-10px)', 'none'] }, { type: M.spring, bounce: 0.15, duration: 0.4 });
+    } else if (M && !mnav.hidden) {
+      M.animate(mnav, { opacity: [1, 0], transform: ['none', 'translateY(-6px)'] }, { duration: 0.16, ease: EASE }).then(function(){
+        if (menuBtn.getAttribute('aria-expanded') === 'false') mnav.hidden = true;
+      });
+    } else mnav.hidden = true;
+  }
+  menuBtn.addEventListener('click', function(){ setMenu(menuBtn.getAttribute('aria-expanded') !== 'true'); });
+  mnav.addEventListener('click', function(e){ if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && menuBtn.getAttribute('aria-expanded') === 'true') { setMenu(false); menuBtn.focus(); }
   });
 
   /* Nyitókép: mintaoldalak szakmánként, magától váltakozva */
@@ -278,7 +303,8 @@
     setTimeout(function(){
       fill(i);
       hv.classList.remove('swapping');
-      toast.classList.remove('pop'); void toast.offsetWidth; toast.classList.add('pop');
+      if (M) M.animate(toast, { transform: ['scale(.92)', 'none'] }, { type: M.spring, bounce: 0.45, duration: 0.6 });
+      else { toast.classList.remove('pop'); void toast.offsetWidth; toast.classList.add('pop'); }
     }, 320);
   }
   function restartCycle(){
@@ -346,14 +372,29 @@
     };
 
     document.documentElement.classList.add('motion');
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if (!en.isIntersecting) return;
-        en.target.classList.add('in'); io.unobserve(en.target);
-        if (en.target.classList.contains('stat')) countUp();
+    if (M && M.inView) {
+      /* Motion: rugós beúszás, a csoportok elemei egymás után (stagger) */
+      targets.forEach(function(t){
+        var shown = false;
+        M.inView(t, function(){
+          if (shown) return; shown = true;
+          var from = t.classList.contains('msg-card') ? 'translateY(22px) scale(.94)' : 'translateY(18px)';
+          var delay = (parseInt(t.style.getPropertyValue('--d'), 10) || 0) / 1000;
+          M.animate(t, { opacity: [0, 1], transform: [from, 'none'] }, { type: M.spring, bounce: 0.2, duration: 0.75, delay: delay })
+            .then(function(){ t.classList.add('in'); });
+          if (t.classList.contains('stat')) countUp();
+        }, { margin: '0px 0px -8% 0px', amount: 0.12 });
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
-    targets.forEach(function(t){ io.observe(t); });
+    } else {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if (!en.isIntersecting) return;
+          en.target.classList.add('in'); io.unobserve(en.target);
+          if (en.target.classList.contains('stat')) countUp();
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+      targets.forEach(function(t){ io.observe(t); });
+    }
 
     var tilt = document.getElementById('tilt');
     var lastY = window.scrollY, ang = 0, angV = 0, swinging = false;
@@ -406,15 +447,25 @@
   }
 
   /* Jogi ablakok */
+  function closeDlg(d){
+    if (!d.open) return;
+    if (!M) { d.close(); return; }
+    M.animate(d, { opacity: [1, 0], transform: ['none', 'scale(.97)'] }, { duration: 0.15, ease: EASE }).then(function(){ d.close(); });
+  }
   document.querySelectorAll('[data-open]').forEach(function(b){
     b.addEventListener('click', function(){
       var d = document.getElementById(b.getAttribute('data-open'));
       if (!d) return;
       if (typeof d.showModal === 'function') d.showModal(); else d.setAttribute('open', '');
+      if (M) M.animate(d, { opacity: [0, 1], transform: ['scale(.96)', 'none'] }, { type: M.spring, bounce: 0.2, duration: 0.45 });
     });
   });
   document.querySelectorAll('dialog').forEach(function(d){
-    d.addEventListener('click', function(e){ if (e.target === d) d.close(); });
+    d.addEventListener('click', function(e){ if (e.target === d) closeDlg(d); });
+    d.addEventListener('cancel', function(e){ if (M) { e.preventDefault(); closeDlg(d); } });
+    d.querySelectorAll('form[method="dialog"]').forEach(function(f){
+      f.addEventListener('submit', function(e){ if (M) { e.preventDefault(); closeDlg(d); } });
+    });
   });
 
   /* Űrlap */
@@ -429,23 +480,182 @@
   var fbMail = document.getElementById('fbMail');
   var fbCopy = document.getElementById('fbCopy');
   var keyReady = CONFIG.web3formsKey && CONFIG.web3formsKey.indexOf('{{') !== 0;
+  var F = form.elements;
+  /* Félig kitöltött űrlapnál a böngésző rákérdez, mielőtt elhagyod az oldalt */
+  form.addEventListener('input', function(){ window.__formDirty = ['name', 'company', 'phone', 'email', 'trade', 'link', 'message'].some(function(n){ return F[n].value.trim(); }); });
+  window.addEventListener('beforeunload', function(e){ if (window.__formDirty) { e.preventDefault(); e.returnValue = ''; } });
 
-  function mark(el){ el.setAttribute('aria-invalid', 'true'); }
+  /* Telefonszám-maszk: gépelés közben +36 30 123 4567 formára alakít (Budapest: +36 1 234 5678), külföldi számot nem bánt */
+  function fmtPhone(v){
+    var plus = /^\s*\+/.test(v), dg = v.replace(/\D/g, '');
+    if (!dg) return plus ? '+' : '';
+    if (plus && dg.slice(0, 2) !== '36') return '+' + dg;
+    var rest;
+    if (plus || dg.slice(0, 2) === '36' || dg.slice(0, 2) === '06') rest = dg.slice(2); // taste-skill-ignore: 06 = magyar előhívó
+    else if (dg === '0' || dg === '3') return dg;
+    else rest = dg;
+    rest = rest.slice(0, 9);
+    var groups = rest.charAt(0) === '1' ? [1, 3, 4] : [2, 3, 4], out = '+36', k = 0;
+    for (var i = 0; i < groups.length && k < rest.length; i++) { out += ' ' + rest.slice(k, k + groups[i]); k += groups[i]; }
+    return out;
+  }
+  function phoneOk(v){
+    var plus = /^\s*\+/.test(v), dg = v.replace(/\D/g, '');
+    if (plus && dg.slice(0, 2) !== '36') return dg.length >= 8 && dg.length <= 15;
+    var rest = dg.slice(0, 2) === '36' || dg.slice(0, 2) === '06' ? dg.slice(2) : dg; // taste-skill-ignore: 06 = magyar előhívó
+    return rest.length === 8 || rest.length === 9;
+  }
+  function applyPhone(inp){
+    var v = inp.value, pos = inp.selectionStart == null ? v.length : inp.selectionStart, atEnd = pos >= v.length;
+    var nv = fmtPhone(v); if (nv === v) return;
+    var before = v.slice(0, pos).replace(/\D/g, '').length;
+    var shift = nv.replace(/\D/g, '').length - v.replace(/\D/g, '').length;
+    inp.value = nv;
+    if (document.activeElement !== inp) return;
+    if (atEnd) { inp.setSelectionRange(nv.length, nv.length); return; }
+    var target = before + Math.max(0, shift), p = 0, c = 0;
+    while (p < nv.length && c < target) { if (/\d/.test(nv.charAt(p))) c++; p++; }
+    inp.setSelectionRange(p, p);
+  }
+  var phoneIn = F.phone;
+  phoneIn.addEventListener('beforeinput', function(e){
+    if (e.inputType !== 'deleteContentBackward') return;
+    var s = phoneIn.selectionStart, en = phoneIn.selectionEnd, v = phoneIn.value;
+    if (s !== en || s === 0 || /\d/.test(v.charAt(s - 1))) return;
+    var i = s - 1; while (i > 0 && !/\d/.test(v.charAt(i - 1))) i--;
+    if (i === 0) return;
+    e.preventDefault();
+    phoneIn.value = v.slice(0, i - 1) + v.slice(s);
+    phoneIn.setSelectionRange(i - 1, i - 1);
+    applyPhone(phoneIn); recheck();
+  });
+  phoneIn.addEventListener('input', function(){ applyPhone(phoneIn); });
+
+  /* Szakma: gépelve kereshető és görgethető lista (ARIA combobox); JS nélkül sima szövegmező */
+  var tradeIn = F.trade;
+  var TRADES = ['Pékség', 'Cukrászda', 'Kávézó', 'Étterem', 'Büfé, gyorsétterem', 'Borászat', 'Fodrászat', 'Borbély', 'Kozmetika', 'Körömszalon', 'Szépségszalon', 'Masszázs', 'Tetoválószalon', 'Autószerviz', 'Gumiszerviz', 'Autómosó', 'Autókereskedés', 'Autósiskola', 'Villanyszerelő', 'Vízszerelő', 'Gázszerelő', 'Klímaszerelő', 'Festő, mázoló', 'Burkoló', 'Asztalos', 'Kőműves, építőipar', 'Tetőfedő', 'Lakatos', 'Kertész', 'Takarítás', 'Költöztetés', 'Ingatlaniroda', 'Könyvelő', 'Ügyvéd', 'Biztosítás', 'Fogorvos', 'Magánorvos', 'Gyógytorna', 'Pszichológus', 'Állatorvos', 'Kutyakozmetika', 'Edzőterem', 'Személyi edző', 'Jóga, mozgásstúdió', 'Nyelviskola', 'Magántanár', 'Fotós', 'Videós', 'Rendezvényszervezés', 'Esküvői szolgáltatás', 'Virágbolt', 'Ajándékbolt', 'Ruhabolt', 'Szállás, panzió', 'Webshop', 'Egyéb'];
+  (function(){
+    var list = document.getElementById('f-trade-list'), btn = form.querySelector('.combo-btn'), live = document.getElementById('f-trade-status');
+    var norm = function(t){ return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); };
+    var items = [], active = -1, isOpen = false;
+    tradeIn.setAttribute('role', 'combobox'); tradeIn.setAttribute('aria-autocomplete', 'list');
+    tradeIn.setAttribute('aria-expanded', 'false'); tradeIn.setAttribute('aria-controls', 'f-trade-list');
+    btn.hidden = false; btn.setAttribute('aria-controls', 'f-trade-list'); btn.setAttribute('aria-expanded', 'false');
+    function render(q){
+      var nq = norm(q.trim()), cur = norm(tradeIn.value.trim());
+      var res = TRADES.map(function(t){ return { t: t, i: nq ? norm(t).indexOf(nq) : 0 }; }).filter(function(o){ return o.i > -1; });
+      if (nq) res.sort(function(a, b){ return (a.i === 0 ? 0 : 1) - (b.i === 0 ? 0 : 1); });
+      list.textContent = ''; items = []; active = -1; tradeIn.removeAttribute('aria-activedescendant');
+      res.forEach(function(o, k){
+        var li = document.createElement('li');
+        li.id = 'f-trade-o' + k; li.setAttribute('role', 'option'); li.setAttribute('data-value', o.t);
+        li.setAttribute('aria-selected', String(norm(o.t) === cur));
+        var txt = document.createElement('span');
+        if (nq) {
+          var m = document.createElement('mark'); m.textContent = o.t.slice(o.i, o.i + nq.length);
+          txt.appendChild(document.createTextNode(o.t.slice(0, o.i))); txt.appendChild(m); txt.appendChild(document.createTextNode(o.t.slice(o.i + nq.length)));
+        } else txt.textContent = o.t;
+        li.appendChild(txt); list.appendChild(li); items.push(li);
+      });
+      if (!res.length) {
+        var e = document.createElement('li'); e.className = 'combo-empty'; e.setAttribute('role', 'presentation');
+        e.textContent = 'Nincs ilyen a listán. Nyugodtan írd be, így küldjük el.'; list.appendChild(e);
+      }
+      live.textContent = res.length ? res.length + ' találat a listában' : 'Nincs találat, a beírt szöveget küldjük el.';
+    }
+    function setActive(k){
+      if (active > -1 && items[active]) items[active].classList.remove('is-active');
+      active = k;
+      if (k > -1 && items[k]) { items[k].classList.add('is-active'); tradeIn.setAttribute('aria-activedescendant', items[k].id); items[k].scrollIntoView({ block: 'nearest' }); }
+      else tradeIn.removeAttribute('aria-activedescendant');
+    }
+    function open(){
+      if (isOpen) return; isOpen = true;
+      list.hidden = false; tradeIn.setAttribute('aria-expanded', 'true'); btn.setAttribute('aria-expanded', 'true');
+      if (M) M.animate(list, { opacity: [0, 1], transform: ['translateY(-6px) scale(.98)', 'none'] }, { duration: 0.18, ease: EASE });
+    }
+    function close(){
+      if (!isOpen) return; isOpen = false;
+      tradeIn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-expanded', 'false'); setActive(-1);
+      if (M) M.animate(list, { opacity: [1, 0], transform: ['none', 'translateY(-4px) scale(.98)'] }, { duration: 0.12, ease: EASE }).then(function(){ if (!isOpen) list.hidden = true; });
+      else list.hidden = true;
+    }
+    function showAll(){
+      var v = norm(tradeIn.value.trim()), exact = v && TRADES.some(function(t){ return norm(t) === v; });
+      render(exact ? '' : tradeIn.value); open();
+      if (exact) for (var k = 0; k < items.length; k++) if (items[k].getAttribute('aria-selected') === 'true') { setActive(k); break; }
+    }
+    function choose(li){ tradeIn.value = li.getAttribute('data-value'); close(); }
+    tradeIn.addEventListener('input', function(){ render(tradeIn.value); open(); });
+    tradeIn.addEventListener('click', function(){ if (!isOpen) showAll(); });
+    tradeIn.addEventListener('blur', close);
+    tradeIn.addEventListener('keydown', function(e){
+      if (e.key === 'ArrowDown') { e.preventDefault(); if (!isOpen) showAll(); setActive(Math.min(items.length - 1, active + 1)); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); if (e.altKey) close(); else if (isOpen) setActive(Math.max(0, active - 1)); }
+      else if (e.key === 'Enter') { if (isOpen && active > -1) { e.preventDefault(); choose(items[active]); } }
+      else if (e.key === 'Escape') { if (isOpen) { e.preventDefault(); close(); } }
+    });
+    btn.addEventListener('mousedown', function(e){ e.preventDefault(); });
+    btn.addEventListener('click', function(){ if (isOpen) close(); else { tradeIn.focus(); showAll(); } });
+    list.addEventListener('mousedown', function(e){ e.preventDefault(); });
+    list.addEventListener('click', function(e){ var li = e.target.closest('li[role="option"]'); if (li) choose(li); });
+  })();
+
+  /* Hibaüzenet közvetlenül a mező alatt, ikonnal (nem csak színnel jelezve) */
+  function setErr(id, inputs, msg){
+    var el = document.getElementById(id);
+    inputs.forEach(function(i){ if (msg) i.setAttribute('aria-invalid', 'true'); else i.removeAttribute('aria-invalid'); });
+    if (msg) {
+      var wasHidden = el.hidden; el.textContent = msg; el.hidden = false;
+      if (wasHidden && M) M.animate(el, { opacity: [0, 1], transform: ['translateY(-4px)', 'none'] }, { duration: 0.18, ease: EASE });
+    } else { el.hidden = true; el.textContent = ''; }
+    return !msg;
+  }
+  var checks = {
+    name: function(){ return setErr('f-name-err', [F.name], F.name.value.trim() ? '' : 'Add meg a neved.'); },
+    reach: function(){
+      var p = F.phone.value.trim(), m = F.email.value.trim(), ok = true;
+      ok = setErr('f-reach-err', [], p || m ? '' : 'Adj meg telefonszámot vagy e-mail-címet, hogy elérjünk.') && ok;
+      ok = setErr('f-phone-err', [F.phone], p && !phoneOk(p) ? 'A telefonszám hiányos, például: +36 30 123 4567.' : '') && ok;
+      ok = setErr('f-email-err', [F.email], m && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(m) ? 'Az e-mail-cím formátuma hibás, például: nev@pelda.hu.' : '') && ok;
+      if (!p && !m) { F.phone.setAttribute('aria-invalid', 'true'); F.email.setAttribute('aria-invalid', 'true'); }
+      return ok;
+    },
+    consent: function(){ return setErr('f-consent-err', [F.consent], F.consent.checked ? '' : 'Az adatkezelési tájékoztató elfogadása nélkül nem tudjuk felvenni veled a kapcsolatot.'); }
+  };
+  var touched = {};
+  function recheck(){ Object.keys(touched).forEach(function(k){ checks[k](); }); }
+  [['name', [F.name]], ['reach', [F.phone, F.email]], ['consent', [F.consent]]].forEach(function(pair){
+    pair[1].forEach(function(inp){
+      inp.addEventListener('blur', function(){ if (inp.value.trim() || touched[pair[0]]) { touched[pair[0]] = true; checks[pair[0]](); } });
+      inp.addEventListener(inp.type === 'checkbox' ? 'change' : 'input', function(){ if (touched[pair[0]]) checks[pair[0]](); });
+    });
+  });
+
   function compose(d){
     return 'Új demó-igénylés a weboldalról\n\n' +
       'Név: ' + d.name + '\n' +
       'Vállalkozás: ' + (d.company || '-') + '\n' +
+      'Szakma: ' + (d.trade || '-') + '\n' +
       'Telefon: ' + (d.phone || '-') + '\n' +
       'E-mail: ' + (d.email || '-') + '\n' +
       'Mire van szükség: ' + d.need + '\n' +
       'Facebook / weboldal: ' + (d.link || '-') + '\n\n' +
       'Üzenet:\n' + (d.message || '-');
   }
+  function reveal(panel){
+    form.hidden = true; panel.hidden = false; panel.focus();
+    if (M) {
+      M.animate(panel, { opacity: [0, 1], transform: ['translateY(12px) scale(.98)', 'none'] }, { type: M.spring, bounce: 0.25, duration: 0.6 });
+      var tick = panel.querySelector('.ok-mark path');
+      if (tick) M.animate(tick, { strokeDashoffset: [32, 0] }, { duration: 0.45, delay: 0.2, ease: EASE });
+    }
+  }
   function showFallback(text, intro){
     fbMsg.value = text;
     fbIntro.textContent = intro;
     fbMail.href = 'mailto:' + CONFIG.email + '?subject=' + encodeURIComponent('Ingyenes demó igénylése') + '&body=' + encodeURIComponent(text);
-    form.hidden = true; fb.hidden = false; fb.focus();
+    reveal(fb);
   }
   fbCopy.addEventListener('click', function(){
     var ok = function(){ fbCopy.textContent = 'Kimásolva'; setTimeout(function(){ fbCopy.textContent = 'Üzenet másolása'; }, 2200); };
@@ -456,27 +666,26 @@
 
   form.addEventListener('submit', function(e){
     e.preventDefault();
-    form.querySelectorAll('[aria-invalid]').forEach(function(el){ el.removeAttribute('aria-invalid'); });
     statusEl.textContent = ''; statusEl.className = 'status';
-    var f = form.elements;
+    touched = { name: true, reach: true, consent: true };
+    var okName = checks.name(), okReach = checks.reach(), okConsent = checks.consent();
+    if (!(okName && okReach && okConsent)) {
+      var bad = form.querySelectorAll('[aria-invalid="true"]');
+      statusEl.textContent = 'Nézd át a pirossal jelölt ' + (bad.length > 1 ? 'mezőket.' : 'mezőt.');
+      statusEl.className = 'status err';
+      if (bad[0]) bad[0].focus();
+      return;
+    }
+    if (F.botcheck.checked) return;
     var d = {
-      name: f.name.value.trim(), company: f.company.value.trim(), phone: f.phone.value.trim(),
-      email: f.email.value.trim(), link: f.link.value.trim(), message: f.message.value.trim(),
+      name: F.name.value.trim(), company: F.company.value.trim(), trade: F.trade.value.trim(), phone: F.phone.value.trim(),
+      email: F.email.value.trim(), link: F.link.value.trim(), message: F.message.value.trim(),
       need: (form.querySelector('input[name="need"]:checked') || { value: 'Nem jelölte' }).value
     };
-    var errors = [], first = null;
-    function bad(el, msg){ mark(el); errors.push(msg); first = first || el; }
-    if (!d.name) bad(f.name, 'Add meg a neved.');
-    if (!d.phone && !d.email) { bad(f.phone, 'Adj meg telefonszámot vagy e-mail-címet, hogy elérjünk.'); mark(f.email); }
-    if (d.email && !/^\S+@\S+\.\S+$/.test(d.email)) bad(f.email, 'Az e-mail-cím formátuma hibás, például: nev@pelda.hu.');
-    if (!f.consent.checked) bad(f.consent, 'Az adatkezelési tájékoztató elfogadása nélkül nem tudjuk felvenni veled a kapcsolatot.');
-    if (errors.length) { statusEl.textContent = errors.join(' '); statusEl.className = 'status err'; first.focus(); return; }
-    if (f.botcheck.checked) return;
-
     var text = compose(d);
     if (!keyReady) { showFallback(text, 'Összeállítottuk az üzenetedet. Küldd el e-mailben, vagy hívj minket.'); return; }
 
-    submitBtn.disabled = true; submitBtn.textContent = 'Küldés…';
+    submitBtn.disabled = true; submitBtn.setAttribute('aria-busy', 'true'); submitBtn.textContent = 'Küldés…';
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -484,17 +693,17 @@
         access_key: CONFIG.web3formsKey,
         subject: 'Új demó-igénylés: ' + (d.company || d.name),
         from_name: 'Dorogi Digital weboldal',
-        'Név': d.name, 'Vállalkozás': d.company, 'Telefon': d.phone, 'E-mail': d.email,
+        'Név': d.name, 'Vállalkozás': d.company, 'Szakma': d.trade, 'Telefon': d.phone, 'E-mail': d.email,
         'Mire van szükség': d.need, 'Facebook / weboldal': d.link, 'Üzenet': d.message,
         replyto: d.email || undefined
       })
     }).then(function(r){ return r.json(); }).then(function(j){
       if (!j.success) throw new Error(j.message || 'hiba');
-      form.hidden = true; done.hidden = false; done.focus();
+      window.__formDirty = false; reveal(done);
     }).catch(function(){
       showFallback(text, 'Az üzenetet most nem sikerült elküldeni. Küldd el e-mailben, vagy hívj minket.');
     }).then(function(){
-      submitBtn.disabled = false; submitBtn.textContent = 'Kérem az ingyenes demót';
+      submitBtn.disabled = false; submitBtn.removeAttribute('aria-busy'); submitBtn.textContent = 'Kérem az ingyenes demót';
     });
   });
   }
