@@ -1,23 +1,25 @@
 @font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(fonts/archivo-latin-ext-standard-normal.woff2) format('woff2-variations'),url(fonts/archivo-latin-ext-standard-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(fonts/archivo-latin-standard-normal.woff2) format('woff2-variations'),url(fonts/archivo-latin-standard-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 :root{
-  /* Dorogi Digital: kék zománc + sárgaréz, világos papír alap. Elválasztás tónussal és térközzel, nem vonalakkal. */
-  --paper:#F1F4F9;
+  /* Dorogi Digital – „B” paletta (mélyebb kék + aranyos sárga). Minden szöveg ≥4,5:1, minden vezérlő-határ ≥3:1, világos és sötét módban is. */
+  --paper:#F3F5F9;
   --surface:#FFFFFF;
-  --ink:#0F1B33;
-  --ink-body:#25314A;
-  --ink-soft:#4A5772;
-  --line:#D3DBE8;
-  --enamel:#1B4DDB;
-  --enamel-deep:#123A9E;
-  --accent-text:#1B4DDB;
-  --brass:#D9962B;
-  --brass-text:#A8690C;
+  --ink:#0B1530;
+  --ink-body:#222D45;
+  --ink-soft:#4A5570;
+  --line:#D6DCE7;
+  --field-line:#7C879F;
+  --enamel:#153EA7;
+  --enamel-deep:#13317A;
+  --accent-text:#153EA7;
+  --brass:#E3A63B;
+  --brass-text:#7D4A14;
+  --focus:#B97A17;
   --err:#B42318;
-  --band-bg:#1B4DDB;
+  --band-bg:#153EA7;
   --band-fg:#FFFFFF;
   --band-soft:#D3DEFB;
-  --foot-bg:#0F1B33;
+  --foot-bg:#0B1530;
   --foot-fg:#B9C4DA;
   --foot-strong:#FFFFFF;
   --on-enamel:#FFFFFF;
@@ -25,8 +27,8 @@
   --ok:#1F9D55;
   --ok-bg:#E2F4E9;
   --ok-text:#15703F;
-  --device:#0F1B33;
-  --logo-tile:#1B4DDB;
+  --device:#0B1530;
+  --logo-tile:#153EA7;
   --logo-mark:#FFFFFF;
   --star:#F2B705;
   --font-display:'Archivo','Archivo Variable','Helvetica Neue',Arial,sans-serif;
@@ -40,17 +42,17 @@
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --paper:#0A1020;--surface:#111A2E;--ink:#E8EEF8;--ink-body:#CBD5E5;--ink-soft:#A3B0C8;--line:#25314B;
-    --enamel:#2557E6;--enamel-deep:#1B45C2;--accent-text:#8FB0FF;--brass:#E9A93E;--brass-text:#EDB04A;
-    --err:#FF8A80;--band-bg:#173A9C;--band-soft:#C5D4FF;--foot-bg:#060B16;--foot-fg:#A3B0C8;
-    --shadow-color:rgba(0,0,0,.6);--ok:#3FCB7E;--ok-bg:#12321F;--ok-text:#7EE2A8;--device:#26324D;--logo-tile:#2557E6;color-scheme:dark;
+    --paper:#080D1B;--surface:#0F172B;--ink:#E9EDF6;--ink-body:#C9D1E1;--ink-soft:#A0AAC0;--line:#232D45;--field-line:#5B6782;
+    --enamel:#2A5DEB;--enamel-deep:#1B4DDB;--accent-text:#99BAFD;--brass:#E9B04F;--brass-text:#EDBA62;--focus:#E9B04F;
+    --err:#FF8A80;--band-bg:#13317A;--band-soft:#C5D4FF;--foot-bg:#050913;--foot-fg:#A3B0C8;
+    --shadow-color:rgba(0,0,0,.6);--ok:#3FCB7E;--ok-bg:#12321F;--ok-text:#7EE2A8;--device:#26324D;--logo-tile:#2A5DEB;color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --paper:#0A1020;--surface:#111A2E;--ink:#E8EEF8;--ink-body:#CBD5E5;--ink-soft:#A3B0C8;--line:#25314B;
-  --enamel:#2557E6;--enamel-deep:#1B45C2;--accent-text:#8FB0FF;--brass:#E9A93E;--brass-text:#EDB04A;
-  --err:#FF8A80;--band-bg:#173A9C;--band-soft:#C5D4FF;--foot-bg:#060B16;--foot-fg:#A3B0C8;
-  --shadow-color:rgba(0,0,0,.6);--ok:#3FCB7E;--ok-bg:#12321F;--ok-text:#7EE2A8;--device:#26324D;--logo-tile:#2557E6;color-scheme:dark;
+  --paper:#080D1B;--surface:#0F172B;--ink:#E9EDF6;--ink-body:#C9D1E1;--ink-soft:#A0AAC0;--line:#232D45;--field-line:#5B6782;
+    --enamel:#2A5DEB;--enamel-deep:#1B4DDB;--accent-text:#99BAFD;--brass:#E9B04F;--brass-text:#EDBA62;--focus:#E9B04F;
+    --err:#FF8A80;--band-bg:#13317A;--band-soft:#C5D4FF;--foot-bg:#050913;--foot-fg:#A3B0C8;
+    --shadow-color:rgba(0,0,0,.6);--ok:#3FCB7E;--ok-bg:#12321F;--ok-text:#7EE2A8;--device:#26324D;--logo-tile:#2A5DEB;color-scheme:dark;
 }
 
 /* Alapok */
@@ -61,7 +63,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 img,svg{max-width:100%}
 [hidden]{display:none!important}
 a{color:var(--accent-text);text-underline-offset:.18em;text-decoration-thickness:.07em}
-:focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:6px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
 ::selection{background:color-mix(in srgb,var(--enamel) 22%,transparent)}
 h1,h2,h3{font-family:var(--font-display);font-stretch:116%;font-weight:780;letter-spacing:-.018em;line-height:1.06;margin:0;text-wrap:balance;color:var(--ink)}
 h2{font-size:clamp(1.65rem,1.2rem + 2.3vw,2.85rem);font-stretch:108%;font-weight:740}
@@ -144,8 +146,8 @@ h1{font-size:clamp(2.6rem,1.2rem + 4.2vw,4.1rem);font-weight:830;font-stretch:11
 @media (max-width:900px){.hero-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "cta" "scene";row-gap:28px}.hero-scene{margin-top:12px}}
 
 /* Űrlapelemek */
-input,textarea{font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:var(--r-control);padding:13px 14px;width:100%;transition:border-color .15s ease,box-shadow .15s ease}
-input::placeholder,textarea::placeholder{color:color-mix(in srgb,var(--ink-soft) 75%,transparent)}
+input,textarea{font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--field-line);border-radius:var(--r-control);padding:13px 14px;width:100%;transition:border-color .15s ease,box-shadow .15s ease}
+input::placeholder,textarea::placeholder{color:var(--ink-soft)}
 input:focus,textarea:focus{outline:none;border-color:var(--enamel);box-shadow:0 0 0 4px color-mix(in srgb,var(--enamel) 20%,transparent)} /* taste-skill-ignore: fókuszgyűrű */
 input[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:var(--err)}
 textarea{min-height:120px;resize:vertical}
@@ -192,6 +194,7 @@ textarea{min-height:120px;resize:vertical}
 .band{background:var(--band-bg);color:var(--band-fg);padding-block:clamp(72px,8.5vw,120px);overflow:hidden}
 .band-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(40px,6vw,88px);align-items:center}
 .band h2{color:var(--band-fg)}
+.band :focus-visible{outline-color:var(--brass)}
 .band-copy{display:grid;gap:16px;justify-items:start}
 .band-copy p{color:var(--band-soft);font-size:1.125rem;max-width:36rem}
 .band-copy .btn{margin-top:12px}
@@ -291,10 +294,10 @@ textarea{min-height:120px;resize:vertical}
 .choice legend{margin-bottom:8px;float:left;width:100%}
 .choice label{position:relative}
 .choice input{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;padding:0;border:0;cursor:pointer}
-.choice span{display:inline-block;padding:9px 15px;border:1.5px solid var(--line);border-radius:var(--r-control);font-size:1rem;font-weight:560;background:var(--surface);cursor:pointer;transition:background-color .15s ease,border-color .15s ease,color .15s ease,transform .16s var(--ease-out)}
+.choice span{display:inline-block;padding:9px 15px;border:1.5px solid var(--field-line);border-radius:var(--r-control);font-size:1rem;font-weight:560;background:var(--surface);cursor:pointer;transition:background-color .15s ease,border-color .15s ease,color .15s ease,transform .16s var(--ease-out)}
 .choice label:active span{transform:scale(.97)}
 .choice input:checked+span{background:var(--enamel);border-color:var(--enamel);color:var(--on-enamel)}
-.choice input:focus-visible+span{outline:3px solid var(--brass);outline-offset:2px}
+.choice input:focus-visible+span{outline:3px solid var(--focus);outline-offset:2px}
 .consent{display:flex;gap:12px;align-items:flex-start;font-size:1rem;color:var(--ink-body);line-height:1.5}
 .consent input{width:20px;height:20px;flex:none;margin:2px 0 0;padding:0;accent-color:var(--enamel)}
 .consent input[aria-invalid="true"]{outline:2px solid var(--err);outline-offset:2px}
@@ -311,7 +314,7 @@ textarea{min-height:120px;resize:vertical}
 .panel .copy-line{font-size:1rem;color:var(--ink)}
 @media (hover:hover) and (pointer:fine){
   .direct a:hover{color:var(--accent-text)}
-  .choice label:hover input:not(:checked)+span{border-color:color-mix(in srgb,var(--enamel) 45%,var(--line))}
+  .choice label:hover input:not(:checked)+span{border-color:color-mix(in srgb,var(--enamel) 55%,var(--field-line))}
 }
 @media (max-width:900px){.contact-grid{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:560px){.row2{grid-template-columns:minmax(0,1fr)}.form .btn{justify-self:stretch}}
@@ -337,7 +340,7 @@ textarea{min-height:120px;resize:vertical}
 
 /* Lábléc */
 .site-foot{background:var(--foot-bg);color:var(--foot-fg);padding-block:60px 32px;font-size:1rem}
-.site-foot .logo{--logo-tile:#2557E6}
+.site-foot .logo{--logo-tile:#2A5DEB}
 .foot-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:32px}
 .site-foot .brand{color:var(--foot-strong)}
 .site-foot .brand-name span{color:var(--foot-fg)}
